@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Harshita 🎂</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe0ed, #e9dcff, #fff1c9);
+    color: #573b60;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 35px 15px;
+    background: linear-gradient(135deg, #ff9ec5, #c6a5ff);
+    border-radius: 0 0 35px 35px;
+    color: white;
+}
+
+header h1 {
+    font-size: 38px;
+    margin: 8px;
+}
+
+header h2 {
+    font-size: 30px;
+    margin: 8px;
+}
+
+section {
+    background: rgba(255,255,255,0.85);
+    margin: 22px auto;
+    padding: 25px 18px;
+    width: 92%;
+    max-width: 850px;
+    border-radius: 25px;
+    box-shadow: 0 5px 18px #b88bb855;
+}
+
+h2 {
+    color: #d65c9c;
+}
+
+button {
+    border: none;
+    background: linear-gradient(135deg, #ff80b5, #a98aff);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 8px;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.letter {
+    background: #fff2f8;
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.8;
+    font-size: 17px;
+    text-align: left;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.photo-card {
+    background: white;
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px #00000018;
+    transform: rotate(-1deg);
+}
+
+.photo-card:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.photo-card p {
+    margin: 8px 0 3px;
+    font-weight: bold;
+}
+
+.photo-card img:not([src]) {
+    display: none;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.options {
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.options button {
+    width: 100%;
+}
+
+#feedback {
+    min-height: 28px;
+    font-weight: bold;
+}
+
+.progress {
+    width: 100%;
+    height: 12px;
+    background: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background: #ff82b5;
+    transition: width 0.3s;
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 430px;
+    margin: 20px auto;
+}
+
+.memory-card {
+    height: 75px;
+    border-radius: 15px;
+    background: #e7d5ff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#wishText, #surpriseText {
+    display: none;
+    background: #fff0f7;
+    padding: 20px;
+    border-radius: 18px;
+    line-height: 1.8;
+    font-size: 18px;
+    white-space: pre-line;
+}
+
+footer {
+    padding: 25px;
+    color: #805b89;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    animation: floatUp 7s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    font-size: 23px;
+    animation: fall 3s linear forwards;
+    pointer-events: none;
+    z-index: 100;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width: 420px) {
+    header h1 {
+        font-size: 29px;
+    }
+
+    .photo-card img {
+        height: 145px;
+    }
+
+    .memory-card {
+        height: 65px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div style="font-size:45px">🎂🎈🎀</div>
+    <h1>HAPPY BIRTHDAY!</h1>
+    <h2>Harshita 💗</h2>
+    <p>A little world made specially for you!</p>
+    <div style="font-size:35px">🧸 🌸 🎁</div>
+</header>
+
+<section>
+    <h2>💌 A Little Birthday Letter</h2>
+
+    <div class="letter">
+        Dear Harshita,
+
+        <br><br>
+
+        Today is all about you! I hope your birthday is filled
+        with happiness, laughter, beautiful memories and lots
+        of reasons to smile.
+
+        <br><br>
+
+        You deserve all the lovely things life has to offer.
+        May every new day bring you exciting opportunities,
+        cute surprises and unforgettable moments.
+
+        <br><br>
+
+        Keep smiling, keep being yourself and never stop
+        chasing your dreams.
+
+        <br><br>
+
+        I made this little website to make your birthday
+        a little more special. Explore everything and enjoy
+        your day!
+
+        <br><br>
+
+        With lots of wishes,<br>
+        <b>Priyanshu ❤️</b>
+    </div>
+</section>
+
+<section>
+    <h2>📸 Our Special Photo Gallery</h2>
+    <p>15 little photo memories 💕</p>
+
+    <div class="gallery" id="gallery"></div>
+</section>
+
+<section id="quiz">
+    <h2>🎮 Birthday Fun Quiz</h2>
+    <p>Let's see how many questions you can answer!</p>
+
+    <div class="progress">
+        <div id="progressBar"></div>
+    </div>
+
+    <p id="questionNumber">Question 1 of 10</p>
+
+    <div class="question" id="questionText"></div>
+
+    <div class="options" id="options"></div>
+
+    <p id="feedback"></p>
+
+    <button id="nextButton" onclick="nextQuestion()" disabled>
+        Next Question ➜
+    </button>
+
+    <h3 id="quizResult"></h3>
+</section>
+
+<section>
+    <h2>🧠 Memory Matching Game</h2>
+    <p>Find all four matching emoji pairs!</p>
+
+    <div class="memory-grid" id="memoryGrid"></div>
+
+    <p id="memoryStatus">Matches: 0 / 4</p>
+
+    <button onclick="startMemory()">Restart Game 🔄</button>
+</section>
+
+<section>
+    <h2>💗 A Special Wish For You</h2>
+
+    <p>There is a little message waiting for you...</p>
+
+    <button onclick="revealWish()">Reveal My Wish ✨</button>
+
+    <div id="wishText">
+Give me many cute videos and a kiss video 😘💗
+
+And may your day become the best day of your year!
+
+Many, many happy returns of the day, Harshita! 🎂❤️
+
+With love,
+Priyanshu 💖
+    </div>
+</section>
+
+<section>
+    <h2>🎁 One Last Surprise!</h2>
+
+    <p>Ready for your final birthday surprise?</p>
+
+    <button onclick="showSurprise()">Open Your Surprise 🎀</button>
+
+    <div id="surpriseText">
+        🎉 HAPPY BIRTHDAY HARSHITA! 🎉
+
+        <br><br>
+
+        May your life always be filled with happiness,
+        laughter, love and beautiful memories.
+
+        <br><br>
+
+        Keep shining like the superstar you are! 🌟
+
+        <br><br>
+
+        From Priyanshu ❤️
+    </div>
+</section>
+
+<footer>
+    Made with ❤️ by Priyanshu<br>
+    Specially for Harshita 🎀
+</footer>
+
+<script>
+
+// ----------------------------------
+// PHOTO GALLERY - 15 PHOTO FILES
+// ----------------------------------
+
+const photos = [
+    "Snapchat-1524357442.jpg",
+    "Snapchat-255869706.jpg",
+    "Snapchat-430905032.jpg",
+    "Snapchat-1861358621.jpg",
+    "Snapchat-1738544487.jpg",
+    "Snapchat-1947592917.jpg",
+    "IMG20261010122241.jpg",
+    "Snapchat-1595560898.jpg",
+    "Snapchat-13888441376.jpg",
+    "Snapchat-670874332.jpg",
+    "Snapchat-1940615736.jpg",
+    "Snapchat-1444884324.jpg",
+    "Snapchat-1292783865.jpg",
+    "Snapchat-1788964342.jpg",
+    "Snapchat-1893124899.jpg"
+];
+
+const gallery = document.getElementById("gallery");
+
+photos.forEach((photo, index) => {
+    const card = document.createElement("div");
+    card.className = "photo-card";
+
+    const img = document.createElement("img");
+    img.src = photo;
+    img.alt = "Birthday memory " + (index + 1);
+
+    img.onerror = function() {
+        this.style.display = "none";
+        const error = document.createElement("p");
+        error.textContent = "Photo not found: " + photo;
+        error.style.fontSize = "11px";
+        error.style.color = "#c44";
+        card.insertBefore(error, card.querySelector("p"));
+    };
+
+    const caption = document.createElement("p");
+    caption.textContent = "Memory " + (index + 1) + " 💗";
+
+    card.appendChild(img);
+    card.appendChild(caption);
+    gallery.appendChild(card);
+});
+
+
+// ----------------------------------
+// 10 QUESTION BIRTHDAY QUIZ
+// ----------------------------------
+
+const questions = [
+    {
+        q: "What is today's special occasion?",
+        options: ["Birthday 🎂", "Halloween 🎃", "New Year 🎉"],
+        answer: 0
+    },
+    {
+        q: "Which dessert is most associated with birthdays?",
+        options: ["Pizza 🍕", "Cake 🎂", "Sandwich 🥪"],
+        answer: 1
+    },
+    {
+        q: "Which animal is known for being super cute?",
+        options: ["Teddy bear 🧸", "Crocodile 🐊", "Shark 🦈"],
+        answer: 0
+    },
+    {
+        q: "Which emoji shows love?",
+        options: ["💗", "💀", "⚽"],
+        answer: 0
+    },
+    {
+        q: "What should a birthday be full of?",
+        options: ["Stress 😵", "Happiness 😍", "Homework 📚"],
+        answer: 1
+    },
+    {
+        q: "Which one is a cute pet?",
+        options: ["Cat 🐱", "Tiger 🐅", "Dinosaur 🦖"],
+        answer: 0
+    },
+    {
+        q: "What do people usually make on birthdays?",
+        options: ["Birthday wishes 🎁", "Shopping lists 🛒", "Timetables 📋"],
+        answer: 0
+    },
+    {
+        q: "What makes a birthday more memorable?",
+        options: ["Beautiful memories 📸", "Arguments 😤", "Boring days 😴"],
+        answer: 0
+    },
+    {
+        q: "Which one is a musical instrument?",
+        options: ["Guitar 🎸", "Pillow 🛏️", "Bottle 🍼"],
+        answer: 0
+    },
+    {
+        q: "Who made this little birthday website?",
+        options: ["Priyanshu ❤️", "Batman 🦇", "A robot 🤖"],
+        answer: 0
+    }
+];
+
+let currentQuestion = 0;
+let score = 0;
+let answered = false;
+
+function showQuestion() {
+    answered = false;
+
+    const q = questions[currentQuestion];
+
+    document.getElementById("questionNumber").textContent =
+        "Question " + (currentQuestion + 1) + " of 10";
+
+    document.getElementById("questionText").textContent = q.q;
+
+    document.getElementById("progressBar").style.width =
+        (currentQuestion / questions.length * 100) + "%";
+
+    document.getElementById("feedback").textContent = "";
+
+    document.getElementById("nextButton").disabled = true;
+
+    document.getElementById("nextButton").textContent =
+        currentQuestion === 9 ? "See My Score 🎉" : "Next Question ➜";
+
+    const options = document.getElementById("options");
+    options.innerHTML = "";
+
+    q.options.forEach((option, index) => {
+        const button = document.createElement("button");
+        button.textContent = option;
+
+        button.onclick = function() {
+            checkAnswer(index);
+        };
+
+        options.appendChild(button);
+    });
+}
+
+function checkAnswer(selected) {
+    if (answered) return;
+
+    answered = true;
+
+    const correct = questions[currentQuestion].answer;
+    const buttons = document.querySelectorAll("#options button");
+
+    buttons.forEach(button => button.disabled = true);
+
+    if (selected === correct) {
+        score++;
+        document.getElementById("feedback").textContent =
+            "Correct answer! Amazing! 🎉";
+    } else {
+        document.getElementById("feedback").textContent =
+            "Nice try! Keep going! 💗";
+    }
+
+    document.getElementById("nextButton").disabled = false;
+}
+
+function nextQuestion() {
+    if (!answered) return;
+
+    currentQuestion++;
+
+    if (currentQuestion < questions.length) {
+        showQuestion();
+    } else {
+        document.getElementById("questionText").textContent =
+            "Quiz Completed! 🎊";
+
+        document.getElementById("options").innerHTML = "";
+
+        document.getElementById("feedback").textContent = "";
+
+        document.getElementById("questionNumber").textContent =
+            "Your final score";
+
+        document.getElementById("progressBar").style.width = "100%";
+
+        document.getElementById("nextButton").style.display = "none";
+
+        document.getElementById("quizResult").textContent =
+            "You scored " + score + " / 10! 💖";
+
+        quizDone = true;
+    }
+}
+
+let quizDone = false;
+
+showQuestion();
+
+
+// ----------------------------------
+// MEMORY MATCHING GAME
+// ----------------------------------
+
+const emojis = [
+    "🎂", "🎂",
+    "💗", "💗",
+    "🎁", "🎁",
+    "🧸", "🧸"
+];
+
+let firstCard = null;
+let secondCard = null;
+let locked = false;
+let matches = 0;
+
+function startMemory() {
+    const grid = document.getElementById("memoryGrid");
+
+    grid.innerHTML = "";
+
+    firstCard = null;
+    secondCard = null;
+    locked = false;
+    matches = 0;
+
+    document.getElementById("memoryStatus").textContent =
+        "Matches: 0 / 4";
+
+    const shuffled = [...emojis].sort(() => Math.random() - 0.5);
+
+    shuffled.forEach(emoji => {
+        const card = document.createElement("div");
+
+        card.className = "memory-card";
+        card.textContent = "❔";
+        card.dataset.emoji = emoji;
+
+        card.onclick = function() {
+            flipCard(card);
+        };
+
+        grid.appendChild(card);
+    });
+}
+
+function flipCard(card) {
+    if (
+        locked ||
+        card === firstCard ||
+        card.textContent !== "❔"
+    ) {
+        return;
+    }
+
+    card.textContent = card.dataset.emoji;
+
+    if (!firstCard) {
+        firstCard = card;
+        return;
+    }
+
+    secondCard = card;
+    locked = true;
+
+    if (firstCard.dataset.emoji === secondCard.dataset.emoji) {
+        matches++;
+
+        document.getElementById("memoryStatus").textContent =
+            "Matches: " + matches + " / 4";
+
+        firstCard.style.background = "#b9f4d0";
+        secondCard.style.background = "#b9f4d0";
+
+        firstCard = null;
+        secondCard = null;
+        locked = false;
+
+        if (matches === 4) {
+            document.getElementById("memoryStatus").textContent =
+                "You found all pairs! Amazing! 🎉";
+            memoryDone = true;
+        }
+
+    } else {
+        setTimeout(() => {
+            firstCard.textContent = "❔";
+            secondCard.textContent = "❔";
+
+            firstCard = null;
+            secondCard = null;
+            locked = false;
+        }, 850);
+    }
+}
+
+let memoryDone = false;
+
+startMemory();
+
+
+// ----------------------------------
+// PERSONAL BIRTHDAY WISH
+// ----------------------------------
+
+let wishDone = false;
+
+function revealWish() {
+    document.getElementById("wishText").style.display = "block";
+    wishDone = true;
+}
+
+
+// ----------------------------------
+// FINAL SURPRISE
+// ----------------------------------
+
+function showSurprise() {
+    document.getElementById("surpriseText").style.display = "block";
+
+    for (let i = 0; i < 55; i++) {
+        const confetti = document.createElement("div");
+
+        confetti.className = "confetti";
+
+        const decorations = [
+            "🎉", "💗", "🎊", "✨", "🌸", "🎀"
+        ];
+
+        confetti.textContent =
+            decorations[Math.floor(Math.random() * decorations.length)];
+
+        confetti.style.left = Math.random() * 100 + "vw";
+
+        confetti.style.animationDuration =
+            (2 + Math.random() * 3) + "s";
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => confetti.remove(), 5000);
+    }
+}
+
+
+// ----------------------------------
+// FLOATING HEARTS
+// ----------------------------------
+
+function createHeart() {
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.textContent = ["💗", "💕", "🌸", "✨"][
+        Math.floor(Math.random() * 4)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 20) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 700);
+
+</script>
+
+</body>
+  </html>
